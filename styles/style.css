@@ -1,0 +1,28 @@
+body {
+  width: 1440px;
+  font-size: 26px;
+  font-family: Montserrat, Oswald, serif;
+}
+
+.header {
+  background-color: #66D1FF;
+}
+
+.promo {
+  width: 1440px;
+  height: 766px;
+  font-size: 0;
+  background-image: url(/img/promo.png);
+}
+
+.photo-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+footer {
+  background-color: #060D10;
+  color: #fff;
+}
