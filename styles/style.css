@@ -1,11 +1,32 @@
 body {
   width: 1440px;
   font-size: 26px;
-  font-family: Montserrat, Oswald, serif;
+  font-family: "Montserrat", "Oswald", serif;
+  margin: 0 auto;
 }
 
 .header {
   background-color: #66D1FF;
+  height: 112px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 8px 41px;
+  color: #060D10;
+  background-color: #fff;
 }
 
 .promo {
@@ -14,6 +35,45 @@ body {
   font-size: 0;
   background-image: url(/img/promo.png);
 }
+
+.feature h2 {
+  font-family: "Oswald";
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
+.feature-list li {
+  width: 406px;
+  margin-right: 30px;
+}
+
+.order h2 {
+  font-family: "Oswald";
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.order a {
+  text-decoration: none;
+}
+
+.order-btn {
+  border: 3px solid #060D10;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #000;
+  padding: 20px 107px 22px 108px;
+}
+
 
 .photo-list {
   display: flex;
