@@ -1,7 +1,37 @@
+/* fonts */
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* oswald-500 - latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/oswald-v40-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v40-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
+  font-family: 'Montserrat', 'Oswald', sans-serif;
   width: 1440px;
   font-size: 26px;
-  font-family: "Montserrat", "Oswald", serif;
   margin: 0 auto;
 }
 
@@ -32,15 +62,43 @@ body {
 .promo {
   width: 1440px;
   height: 766px;
-  font-size: 0;
-  background-image: url(/img/promo.png);
+  background-image: url();
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #060D10;
+}
+
+.title-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #060D10;
+}
+
+.feature {
+  background: rgba(102, 209, 255, .1);
+  color: #060D10;
 }
 
 .feature h2 {
-  font-family: "Oswald";
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 48px;
-  font-weight: 700;
+  line-height: 167%;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .feature-list {
@@ -56,11 +114,25 @@ body {
   margin-right: 30px;
 }
 
+.feature-list h3 {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 167%;
+  text-transform: uppercase;
+}
+
+.order {
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 1) 43.86%);
+}
+
 .order h2 {
-  font-family: "Oswald";
+  font-family: 'Oswald', sans-serif;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 .order a {
   text-decoration: none;
@@ -82,7 +154,15 @@ body {
 
 }
 
-footer {
+.footer {
   background-color: #060D10;
   color: #fff;
 }
+
+.go {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 167%;
+}
+
