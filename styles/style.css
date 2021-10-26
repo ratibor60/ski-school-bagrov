@@ -40,7 +40,7 @@ body {
 .container {
   width: 1278px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid green; */
 }
 
 
@@ -49,11 +49,6 @@ body {
   background-color: #66D1FF;
 }
 
-.wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .menu ul {
   display: flex;
@@ -64,6 +59,8 @@ body {
 }
 
 .menu li {
+  justify-content: space-between;
+  align-items: center;
   margin-left: 227px;
 }
 
@@ -164,31 +161,52 @@ body {
   background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 1) 43.86%);
 }
 
-.order h2 {
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.order-title {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
+  padding-top: 170px;
 }
 .order a {
   text-decoration: none;
 }
 
 .order-btn {
+  width: 505px;
+  height: 86px;
+  text-align: center;
   border: 3px solid #060D10;
   box-sizing: border-box;
   border-radius: 4px;
   color: #000;
   padding: 20px 107px 22px 108px;
+  margin-top: 60px;
 }
 
 
 .photo-list {
   display: flex;
-  justify-content: space-around;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.photo-list li {
+  margin-top: 130px;
+  margin-bottom: 180px;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.photo-list li:first-child {
+  margin-left: 0;
 }
 
 .footer {
@@ -201,5 +219,12 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 167%;
+}
+
+.footer-wrap {
+  display: flex;
+}
+.social {
+  list-style: none;
 }
 
