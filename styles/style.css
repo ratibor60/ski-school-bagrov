@@ -38,7 +38,7 @@ body {
 .container {
   width: 1278px;
   margin: 0 auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 
@@ -164,51 +164,60 @@ body {
 
 .order {
   padding-top: 170px;
+  padding-bottom: 180px;
   background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 1) 43.86%);
-}
-
-.wrap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .order-title {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 167%;
+  text-align: center;
   text-transform: uppercase;
-  padding-top: 170px;
 }
 .order a {
+  display: block;
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .order-btn {
-  width: 505px;
-  height: 86px;
+  width: 41%;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  padding: 20px 107px 22px 108px;
   text-align: center;
   border: 3px solid #060D10;
-  box-sizing: border-box;
   border-radius: 4px;
-  color: #000;
-  padding: 20px 107px 22px 108px;
+  color: #060D10;
 }
 
 
 .photo-list {
   display: flex;
-  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0 -15px;
+  margin-top: 130px;
   list-style: none;
-  padding: 0 -15px;
+
 }
 
 .photo-list li {
   flex-basis: 25%;
-  padding: 30px;
+  padding: 0 15px;
+}
+
+.photo-list img {
+  width: 100%;
 }
 
 .footer {
+  padding: 35px 0;
   background-color: #060D10;
   color: #fff;
 }
@@ -222,8 +231,73 @@ body {
 
 .footer-wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.footer-box {
+  display: flex;
+  align-items: center;
+}
+
 .social {
+  display: flex;
   list-style: none;
+}
+
+.social-item {
+  padding: 0 10px;
+}
+
+ .link {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.twitter {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url(../img/twitter.svg);
+}
+
+.linkedin {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url(../img/linkedin.svg);
+}
+
+.google {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url(../img/google.svg);
+}
+
+.facebook {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url(../img/facebook.svg);
+}
+
+.copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
